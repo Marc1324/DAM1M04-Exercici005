@@ -384,3 +384,158 @@ body {
     font-size: 2rem;
   }
 }
+/* guia d'estils*/
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.6);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+  letter-spacing: 1px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #4f46e5, #fbbf24);
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* SECCIONS */
+.section {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* TIPOGRAFIA */
+.h1-demo { font-size: 3rem; line-height: 1.2; letter-spacing: 0.5px; }
+.h2-demo { font-size: 2.2rem; line-height: 1.2; letter-spacing: 0.5px; }
+.h3-demo { font-size: 1.5rem; line-height: 1.2; letter-spacing: 0.5px; }
+
+.p-demo { font-weight: 300; max-width: 700px; margin-top: 1rem; }
+
+.typography-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.font-info {
+  margin-top: 1rem;
+  list-style: circle inside;
+}
+
+/* BASELINE ICONA + TEXT */
+.baseline-demo {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.baseline-demo .material-symbols-outlined {
+  font-size: 2rem;
+}
+
+/* ICONES */
+.icons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.icon-sample {
+  text-align: center;
+}
+
+/* BOTONS */
+.buttons-showcase {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.btn, .link-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background: #4f46e5;
+  color: white
+}

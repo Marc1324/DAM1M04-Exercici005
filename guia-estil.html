@@ -4,3 +4,164 @@
     <link rel="stylesheet" href="estils.css">
        <meta charset="UTF-8">
        <title>Principal</title>
+  <title>Guia d’Estil</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- Material Icons Variable -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1;wght@100..700;opsz@20..48" rel="stylesheet" />
+
+  <link rel="stylesheet" href="guia-estil.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Brand</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Index</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="guia-estil.html">Guia d’estil</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Guia d’Estil</h1>
+    <p>Tipografia · Icones · Colors · Accessibilitat</p>
+  </header>
+
+  <!-- TIPOGRAFIA -->
+  <section class="section">
+    <h2>Tipografia</h2>
+
+    <div class="typography-showcase">
+
+      <div>
+        <h1 class="h1-demo">Heading H1 – Playfair Display</h1>
+        <h2 class="h2-demo">Heading H2 – Playfair Display</h2>
+        <h3 class="h3-demo">Heading H3 – Playfair Display</h3>
+
+        <p class="p-demo">
+          Pàrraf base (Roboto). Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Aquest text mostra <strong>line-height</strong>, pesos tipogràfics i
+          <em>letter-spacing</em>.
+        </p>
+      </div>
+
+      <ul class="font-info">
+        <li><strong>Font-family:</strong> Roboto & Playfair Display</li>
+        <li><strong>Pesos:</strong> 300 · 400 · 500 · 700</li>
+        <li><strong>Line-height:</strong> 1.6 (text), 1.2 (títols)</li>
+        <li><strong>Letter-spacing:</strong> 0.5px (títols)</li>
+        <li><strong>Escala REM:</strong> 1rem, 1.25rem, 1.5rem, 2rem, 3rem</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ALINEACIÓ BASELINE ICONA + TEXT -->
+  <section class="section">
+    <h2>Alineació al Baseline</h2>
+
+    <div class="baseline-demo">
+      <span class="material-symbols-outlined">home</span>
+      <p>Text alineat amb icona al baseline</p>
+    </div>
+  </section>
+
+  <!-- ACCESSIBILITAT -->
+  <section class="section">
+    <h2>Accessibilitat</h2>
+    <div class="accessibility">
+      <p class="small-text">Mida mínima accessible: 0.875rem (14px)</p>
+      <p class="large-text">Text gran: 1.25rem amb contrast adequat</p>
+    </div>
+  </section>
+
+  <!-- MATERIAL ICONS -->
+  <section class="section">
+    <h2>Material Icons</h2>
+
+    <div class="icons-grid">
+
+      <div class="icon-sample">
+        <span class="material-symbols-outlined" style="font-size: 24px; wght:300;">home</span>
+        <p>Wght 300 – 24px</p>
+      </div>
+
+      <div class="icon-sample">
+        <span class="material-symbols-outlined" style="font-size: 32px; wght:500;">home</span>
+        <p>Wght 500 – 32px</p>
+      </div>
+
+      <div class="icon-sample">
+        <span class="material-symbols-outlined" style="font-size: 48px; FILL:1;">home</span>
+        <p>FILL 1 – 48px</p>
+      </div>
+
+      <div class="icon-sample">
+        <span class="material-symbols-outlined" style="font-size: 40px; opsz:48;">home</span>
+        <p>Optical size 48</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BOTONS AMB ICONES -->
+  <section class="section">
+    <h2>Botons i Enllaços</h2>
+
+    <div class="buttons-showcase">
+
+      <a class="btn">
+        <span class="material-symbols-outlined">arrow_forward</span>
+        Botó primari
+      </a>
+
+      <a class="link-icon">
+        <span class="material-symbols-outlined">info</span>
+        Enllaç amb icona
+      </a>
+
+    </div>
+  </section>
+
+  <!-- TAULA DE COLORS -->
+  <section class="section">
+    <h2>Colors</h2>
+
+    <table class="color-table">
+      <tr>
+        <th>Mostra</th>
+        <th>HEX</th>
+        <th>RGB</th>
+        <th>HSL</th>
+        <th>Alpha</th>
+      </tr>
+
+      <tr>
+        <td><div class="color-sample primary"></div></td>
+        <td>#4f46e5</td>
+        <td>79, 70, 229</td>
+        <td>243°, 72%, 59%</td>
+        <td>rgba(79, 70, 229, 0.5)</td>
+      </tr>
+
+      <tr>
+        <td><div class="color-sample secondary"></div></td>
+        <td>#fbbf24</td>
+        <td>251, 191, 36</td>
+        <td>45°, 95%, 56%</td>
+        <td>rgba(251, 191, 36, 0.5)</td>
+      </tr>
+
+    </table>
+  </section>
+
+</body>
+</html>
