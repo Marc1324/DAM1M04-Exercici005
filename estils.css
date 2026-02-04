@@ -354,7 +354,7 @@ body {
   }
 }
 
-/* SCROLL REVEAL */
+/* SCROLL REVEAL MODIFICADO */
 .scroll-reveal {
   max-width: 900px;
   margin: 4rem auto;
@@ -365,47 +365,31 @@ body {
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  margin: 2rem 0;
+  margin: 4rem 0; /* Aumentamos el margen para dar más aire entre fotos */
   font-size: 1.3rem;
   text-align: center;
+  
+  /* Estado inicial */
   opacity: 0;
-  transform: translateY(70px);
+  transform: translateY(100px) scale(0.95); /* Un poco más abajo y más pequeña */
 
   /* Scroll Animation */
-  animation: reveal 1s ease;
+  animation: reveal linear; /* Usamos 'linear' porque el ritmo lo marca el dedo/ratón al hacer scroll */
   animation-timeline: view();
-  animation-range: entry 20% cover 30%;
+  
+  /* MODIFICACIÓN CLAVE: 
+     Entry 5% significa que empieza casi en cuanto asoma.
+     Cover 50% significa que no termina de colocarse del todo hasta que llega a la mitad de la pantalla. */
+  animation-range: entry 5% cover 50%;
+  
+  /* Para que la animación no se reinicie bruscamente al salir */
+  animation-fill-mode: both;
 }
 
 @keyframes reveal {
   to {
     opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* FALLBACK SI EL NAVEGADOR NO SUPORTA SCROLL-TIMELINE */
-@supports not (animation-timeline: view()) {
-  .reveal-box {
-    animation: revealFallback 1.2s ease forwards;
-  }
-
-  @keyframes revealFallback {
-    from {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
+    transform: translateY(0) scale(1);
   }
 }
 /* guia d'estils*/
